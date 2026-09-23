@@ -1,0 +1,82 @@
+from pathlib import Path
+
+html = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academy X92</title>
+<style>
+html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}
+header{position:sticky;top:0;background:rgba(0,0,0,.9);padding:12px;border-bottom:2px solid gold}
+.logo{text-align:center;color:gold;font-size:32px;font-weight:bold}
+nav{text-align:center}nav a{color:#fff;text-decoration:none;margin:8px}
+.hero{padding:100px 20px;text-align:center;background:linear-gradient(135deg,#000,#222)}
+.hero h1{color:gold;font-size:56px}
+.section{max-width:1200px;margin:auto;padding:40px 20px}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,215,0,.2);padding:20px;border-radius:16px;margin:15px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.gallery div{height:180px;background:#222;border-radius:12px}
+.btn{background:gold;color:#000;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block}
+.marq{background:gold;color:#000;padding:10px;font-weight:bold}
+.float-call,.float-wa{position:fixed;right:20px;padding:12px 16px;border-radius:50px;text-decoration:none;color:#fff}
+.float-call{bottom:80px;background:#28a745}
+.float-wa{bottom:20px;background:#25D366}
+footer{text-align:center;padding:20px;border-top:1px solid #333}
+input{width:100%;padding:10px;border-radius:8px;border:none}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Academy X92</div>
+<nav>
+<a href="#notes">Notes</a><a href="#pdf">PDF</a><a href="#courses">Courses</a>
+<a href="#gallery">Gallery</a><a href="#videos">Videos</a><a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Academy X92</h1>
+<p>Learn Today • Lead Tomorrow</p>
+</div>
+
+<div class="marq"><marquee>Latest Updates • New Notes • PDFs • Courses • Announcements</marquee></div>
+
+<section class="section">
+<input placeholder="🔍 Search Notes">
+</section>
+
+<section class="section" id="notes"><div class="card"><h2>📚 Notes</h2><div class="grid"><div class="card">Science Notes</div><div class="card">Math Notes</div><div class="card">Computer Notes</div></div></div></section>
+
+<section class="section" id="pdf"><div class="card"><h2>📄 PDF Downloads</h2><a class="btn" href="#">Download PDF</a></div></section>
+
+<section class="section" id="courses"><div class="card"><h2>🎓 Courses</h2><p>Course details can be added here.</p></div></section>
+
+<section class="section" id="gallery"><h2>🖼️ Gallery</h2><div class="gallery"><div></div><div></div><div></div></div></section>
+
+<section class="section" id="videos"><div class="card"><h2>🎥 Video Lectures</h2><iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe></div></section>
+
+<section class="section"><div class="card"><h2>👨‍🏫 About Us</h2><p>Academy X92 educational platform.</p></div></section>
+
+<section class="section" id="contact">
+<div class="card">
+<h2>📞 Contact Us</h2>
+<p><a href="tel:9936904450">99369 04450</a></p>
+<p><a href="tel:8052538331">80525 38331</a></p>
+<p><a href="mailto:shyamyadav18024@gmail.com">shyamyadav18024@gmail.com</a></p>
+<p>Nathnagar, Front of Government Hospital</p>
+<p><a class="btn" href="https://www.instagram.com/shyam_ydv_x92" target="_blank">Instagram</a>
+<a class="btn" href="https://youtube.com/@shyam_x92" target="_blank">YouTube</a></p>
+</div>
+</section>
+
+<a class="float-call" href="tel:9936904450">📞 Call</a>
+<a class="float-wa" href="https://wa.me/919936904450">WhatsApp</a>
+
+<footer>© Academy X92</footer>
+</body>
+</html>"""
+path = "/mnt/data/Academy_X92_Premium.html"
+Path(path).write_text(html, encoding="utf-8")
+print(path)
