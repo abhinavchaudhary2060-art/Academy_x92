@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INDIA EXPLORER X92 — Tourist Places of India</title>
+<style>
+:root{--bg:#080b12;--panel:#121827;--panel2:#192236;--red:#ff3b4f;--gold:#ffc857;--muted:#aab4c8;--white:#f7f8fc}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#18213a 0,#080b12 55%);color:var(--white);font-family:system-ui,Arial,sans-serif}header{padding:24px 5%;background:#080b12dd;border-bottom:1px solid #ffffff18;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}.brand{font-size:clamp(22px,4vw,34px);font-weight:900;letter-spacing:1px}.brand span{color:var(--red)}.sub{color:var(--muted);margin-top:5px}.wrap{max-width:1400px;margin:auto;padding:22px 5%}.hero{padding:28px 0 18px}.hero h1{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:0 0 12px}.hero h1 span{color:var(--gold)}.hero p{color:var(--muted);max-width:750px;line-height:1.6}.stats{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.stat{background:var(--panel);border:1px solid #ffffff14;padding:12px 16px;border-radius:14px}.stat b{color:var(--gold);font-size:20px;display:block}.filters{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px;background:var(--panel);padding:14px;border:1px solid #ffffff18;border-radius:18px;margin:20px 0}.filters input,.filters select,.planner input,.planner select{width:100%;padding:13px;background:#0a0e18;color:white;border:1px solid #303a50;border-radius:11px;font-size:15px;outline:none}.section-title{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin:26px 0 15px}.section-title h2{margin:0;font-size:24px}.section-title small{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#172033,#101522);border:1px solid #ffffff17;border-radius:18px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#ff3b4f88}.photo{height:190px;background:linear-gradient(135deg,#27344f,#101522);position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block}.tag{position:absolute;left:12px;top:12px;background:#080b12dd;color:var(--gold);font-size:12px;padding:6px 10px;border-radius:30px}.cardbody{padding:16px}.card h3{margin:0 0 5px;font-size:19px}.place{color:var(--gold);font-size:13px;font-weight:700}.desc{color:#c0c8d8;font-size:14px;line-height:1.5;min-height:42px;margin:10px 0}.meta{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:13px;margin:12px 0}.btn{border:0;background:var(--red);color:white;padding:11px 14px;border-radius:10px;font-weight:800;cursor:pointer}.btn.secondary{background:#27324a;border:1px solid #46516a}.actions{display:flex;gap:8px;flex-wrap:wrap}.planner{margin:34px 0;background:linear-gradient(130deg,#1a2338,#101522);padding:22px;border-radius:20px;border:1px solid #ffffff1b}.planner h2{margin-top:0}.plannergrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.result{background:#090e19;border:1px solid #ffffff1a;padding:16px;border-radius:12px;margin-top:14px;line-height:1.6}.saved{display:flex;gap:8px;flex-wrap:wrap}.saved span{background:#27324a;padding:8px 12px;border-radius:30px;font-size:13px}.empty{padding:35px;text-align:center;color:var(--muted);background:var(--panel);border-radius:16px}.note{color:var(--muted);font-size:13px;line-height:1.6}footer{text-align:center;color:var(--muted);padding:30px 5%;border-top:1px solid #ffffff18;margin-top:35px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}}@media(max-width:580px){header{position:relative}.grid{grid-template-columns:1fr}.filters,.plannergrid{grid-template-columns:1fr}.photo{height:210px}.wrap{padding:18px 4%}}
+
+.option-field{display:flex;flex-direction:column;gap:6px;min-width:0;background:#171717;border:1px solid #444;border-radius:10px;padding:10px}.option-field label{color:#ffc857;font-weight:700;font-size:13px}.option-field input,.option-field select{width:100%;min-width:0}.person-field{display:flex;align-items:center;gap:10px;min-width:0;background:#171717;border:1px solid #444;border-radius:10px;padding:8px 12px}.person-field label{color:#ffc857;font-weight:700;white-space:nowrap}.person-field input{width:72px;min-width:55px;padding:8px;text-align:center;background:#242424;color:#fff;border:1px solid #555;border-radius:7px}
+</style>
+</head>
+<body>
+<header><div class="brand">INDIA EXPLORER <span>X92</span></div><div class="sub">Discover India • States, UTs, heritage, nature & adventures</div></header>
+<main class="wrap">
+<section class="hero"><h1>Explore <span>Incredible India</span> 🇮🇳</h1><p>India ke states aur Union Territories ke popular tourist destinations ek jagah. Search karein, state/category se filter karein, apni trip list save karein aur approximate budget calculate karein.</p>
+<div class="stats"><div class="stat"><b id="count">0</b>Places listed</div><div class="stat"><b>28 + 8</b>States & UTs covered</div><div class="stat"><b>₹</b>Trip budget planner</div></div></section>
+<div class="filters"><input id="search" placeholder="🔎 Place, city ya state search karein..."><select id="state"><option value="">All States & UTs</option></select><select id="category"><option value="">All Categories</option><option>Heritage</option><option>Temple</option><option>Nature</option><option>Hill Station</option><option>Beach</option><option>Wildlife</option><option>Adventure</option><option>City & Culture</option></select></div>
+<div class="section-title"><h2>🌍 Tourist Places</h2><small id="shown"></small></div><div class="grid" id="grid"></div><div id="empty" class="empty" hidden>Koi place nahi mila. Search ya filters badal kar dekhein.</div>
+<section class="planner"><h2>🧳 Trip Planner & Budget</h2><p class="note">Travel, hotel, food, entry tickets aur local transport mila kar budget. Neeche rates apne hisaab se badal sakte hain; hotel rooms 2 log per room ke hisaab se estimate honge.</p><div class="plannergrid"><div class="option-field"><label for="tripPlace">Destination</label><select id="tripPlace"><option value="">Destination choose karein</option></select></div><div class="option-field"><label for="days">Trip days</label><input id="days" type="number" min="1" max="60" value="3"></div><div class="option-field"><label for="people">Persons</label><input id="people" type="number" min="1" max="100" value="2" aria-label="Number of persons"></div><div class="option-field"><label for="travelMode">Travel mode</label><select id="travelMode" aria-label="Travel mode"><option value="car">🚗 Car</option><option value="bike">🏍️ Bike</option><option value="train" selected>🚆 Train</option><option value="airplane">✈️ Airplane</option><option value="bus">🚌 Bus</option><option value="cycle">🚲 Cycle</option><option value="other">Other / Custom</option></select></div><div class="option-field"><label for="travelCost">Travel/person (₹, round trip)</label><input id="travelCost" type="number" min="0" value="1500"></div><div class="option-field"><label for="hotelCost">Hotel/room/night (₹)</label><input id="hotelCost" type="number" min="0" value="1500"></div><div class="option-field"><label for="foodCost">Food/person/day (₹)</label><input id="foodCost" type="number" min="0" value="500"></div><div class="option-field"><label for="ticketCost">Tickets/person (₹)</label><input id="ticketCost" type="number" min="0" value="500"></div><div class="option-field"><label for="localCost">Local transport/person/day (₹)</label><input id="localCost" type="number" min="0" value="300"></div><div class="option-field"><label for="style">Trip type</label><select id="style"><option value="budget">Budget trip</option><option value="standard" selected>Standard trip</option><option value="comfort">Comfort trip</option></select></div></div><div class="actions" style="margin-top:12px"><button class="btn" onclick="calculate()">Calculate Budget</button><button class="btn secondary" onclick="saveTrip()">Save Destination</button><button class="btn secondary" onclick="saveBudgetSettings()">💾 Save Budget Settings</button><button class="btn secondary" onclick="loadBudgetSettings()">📂 Load Saved Settings</button><button class="btn secondary" onclick="clearSaved()">Clear Saved</button></div><div class="result" id="budget">Destination select karke budget calculate karein.</div><h3>📌 My Saved Trip List</h3><div class="saved" id="saved"></div></section>
+<p class="note">Coverage note: Is directory mein har state/UT se kai representative aur well-known places diye gaye hain, lekin Bharat ke har chhote gaon, local spot ya har tourist attraction ki exhaustive list nahi hai. Photos internet connection par load hoti hain. Trip se pehle timings, permits, weather aur local advisories verify karein.</p>
+</main><footer>Made for explorers • INDIA EXPLORER X92</footer>
+<script>
+const raw = [
+["Andhra Pradesh","Tirupati Balaji Temple","Tirupati","Temple","Famous hill temple and major pilgrimage destination.",4500],
+["Andhra Pradesh","Araku Valley","Visakhapatnam region","Nature","Green valleys, coffee plantations and scenic rail routes.",5500],
+["Andhra Pradesh","Borra Caves","Ananthagiri Hills","Nature","Limestone caves with striking natural formations.",4000],
+["Andhra Pradesh","Lepakshi Temple","Sri Sathya Sai district","Heritage","Historic temple known for Vijayanagara architecture.",3500],
+["Arunachal Pradesh","Tawang Monastery","Tawang","Heritage","Large Buddhist monastery set among Himalayan mountains.",8500],
+["Arunachal Pradesh","Sela Pass","Tawang route","Nature","High mountain pass with dramatic views and a lake.",8000],
+["Arunachal Pradesh","Ziro Valley","Lower Subansiri","Nature","Green valley, Apatani culture and scenic villages.",7000],
+["Arunachal Pradesh","Namdapha National Park","Changlang","Wildlife","Biodiversity-rich forest and wildlife reserve.",7500],
+["Assam","Kaziranga National Park","Golaghat & Nagaon","Wildlife","Famous for the one-horned rhinoceros and safaris.",6500],
+["Assam","Kamakhya Temple","Guwahati","Temple","Important Shakti shrine on Nilachal Hill.",3000],
+["Assam","Majuli Island","Brahmaputra River","Nature","River island known for satras and Assamese culture.",5000],
+["Assam","Sivasagar","Sivasagar","Heritage","Ahom-era monuments, tanks and historic temples.",4000],
+["Bihar","Mahabodhi Temple","Bodh Gaya","Temple","Buddhist pilgrimage site associated with Buddha's enlightenment.",4000],
+["Bihar","Nalanda Mahavihara","Nalanda","Heritage","Ruins of the ancient learning centre.",3500],
+["Bihar","Vishnupad Temple","Gaya","Temple","Historic Hindu temple on the Falgu River.",3000],
+["Bihar","Rajgir & Vishwa Shanti Stupa","Rajgir","Nature","Hills, ropeway and Buddhist heritage sites.",4000],
+["Chhattisgarh","Chitrakote Waterfall","Bastar","Nature","Broad waterfall on the Indravati River.",5500],
+["Chhattisgarh","Bhoramdeo Temple","Kabirdham","Heritage","Intricately carved temple complex.",4000],
+["Chhattisgarh","Barnawapara Wildlife Sanctuary","Baloda Bazar","Wildlife","Forest reserve with wildlife and birdlife.",4500],
+["Chhattisgarh","Sirpur","Mahasamund","Heritage","Archaeological site with Buddhist and Hindu remains.",3500],
+["Goa","Baga & Calangute Beaches","North Goa","Beach","Popular coastline with beach activities and cafes.",6000],
+["Goa","Basilica of Bom Jesus","Old Goa","Heritage","UNESCO-listed church and historic Old Goa landmark.",4500],
+["Goa","Dudhsagar Falls","Sanguem","Nature","High waterfall surrounded by forest.",6500],
+["Goa","Fort Aguada","Candolim","Heritage","Seaside Portuguese-era fort with coastal views.",4500],
+["Gujarat","Statue of Unity","Ekta Nagar","Heritage","Monument complex near the Narmada River.",5500],
+["Gujarat","Rann of Kutch","Kutch","Nature","Vast white salt desert, especially popular in winter.",7000],
+["Gujarat","Somnath Temple","Prabhas Patan","Temple","Coastal Jyotirlinga temple.",5000],
+["Gujarat","Gir National Park","Sasan Gir","Wildlife","Natural habitat of Asiatic lions; permits required.",7500],
+["Haryana","Sultanpur National Park","Gurugram district","Wildlife","Bird sanctuary popular during migratory season.",3000],
+["Haryana","Kurukshetra & Brahma Sarovar","Kurukshetra","Heritage","Historic and religious sites linked with Mahabharata traditions.",3500],
+["Haryana","Morni Hills","Panchkula","Hill Station","Hills, lake and nature trails.",3500],
+["Haryana","Pinjore Gardens","Panchkula","Heritage","Mughal-style terraced garden.",2500],
+["Himachal Pradesh","Shimla","Shimla","Hill Station","Colonial architecture, Mall Road and mountain views.",7000],
+["Himachal Pradesh","Manali","Kullu","Hill Station","Mountain town for scenic drives and outdoor activities.",8500],
+["Himachal Pradesh","Dharamshala & McLeod Ganj","Kangra","Hill Station","Tibetan culture, monasteries and Himalayan views.",7500],
+["Himachal Pradesh","Spiti Valley","Lahaul-Spiti","Adventure","High-altitude desert, monasteries and dramatic landscapes.",12000],
+["Jharkhand","Hundru Falls","Ranchi","Nature","Waterfall on the Subarnarekha River.",3500],
+["Jharkhand","Baidyanath Dham","Deoghar","Temple","Major Shiva pilgrimage destination.",4000],
+["Jharkhand","Betla National Park","Latehar","Wildlife","Forest reserve with wildlife and historic forts nearby.",5000],
+["Jharkhand","Netarhat","Latehar","Hill Station","Quiet plateau known for sunrise and sunset views.",4500],
+["Karnataka","Mysuru Palace","Mysuru","Heritage","Grand royal palace and city landmark.",4500],
+["Karnataka","Hampi","Vijayanagara","Heritage","UNESCO-listed ruins of the Vijayanagara Empire.",6000],
+["Karnataka","Coorg (Kodagu)","Kodagu","Nature","Coffee estates, hills and waterfalls.",6500],
+["Karnataka","Gokarna","Uttara Kannada","Beach","Coastal town with beaches and temple heritage.",5500],
+["Kerala","Alappuzha Backwaters","Alappuzha","Nature","Backwater cruises and houseboat experiences.",7000],
+["Kerala","Munnar","Idukki","Hill Station","Tea gardens, misty hills and viewpoints.",7500],
+["Kerala","Fort Kochi","Kochi","Heritage","Historic waterfront, colonial streets and art spaces.",5000],
+["Kerala","Periyar Tiger Reserve","Thekkady","Wildlife","Forest reserve and lake-based nature activities.",6500],
+["Madhya Pradesh","Khajuraho Temples","Chhatarpur","Heritage","UNESCO-listed temple group with detailed stone carvings.",5000],
+["Madhya Pradesh","Sanchi Stupa","Raisen","Heritage","Ancient Buddhist monuments and stupas.",3500],
+["Madhya Pradesh","Kanha National Park","Mandla & Balaghat","Wildlife","Tiger reserve known for forest and wildlife safaris.",9000],
+["Madhya Pradesh","Ujjain Mahakaleshwar","Ujjain","Temple","Important Jyotirlinga and pilgrimage city.",4000],
+["Maharashtra","Gateway of India","Mumbai","Heritage","Iconic waterfront monument in Mumbai.",4500],
+["Maharashtra","Ajanta Caves","Chhatrapati Sambhajinagar","Heritage","Ancient Buddhist cave paintings and sculptures.",5500],
+["Maharashtra","Ellora Caves","Verul","Heritage","Rock-cut cave complex including Kailasa Temple.",5500],
+["Maharashtra","Mahabaleshwar","Satara","Hill Station","Hill station with viewpoints and strawberry farms.",6500],
+["Manipur","Loktak Lake","Bishnupur","Nature","Famous lake with floating phumdis.",5000],
+["Manipur","Kangla Fort","Imphal","Heritage","Historic centre of the former kingdom of Manipur.",3500],
+["Manipur","Keibul Lamjao National Park","Bishnupur","Wildlife","Floating national park and habitat of the Sangai deer.",5000],
+["Meghalaya","Living Root Bridges","Nongriat","Adventure","Living bridges grown from tree roots; trek required.",6500],
+["Meghalaya","Shillong","East Khasi Hills","Hill Station","Hill city with cafes, viewpoints and nearby waterfalls.",6000],
+["Meghalaya","Dawki & Umngot River","West Jaintia Hills","Nature","Clear river waters and scenic borderland views.",6000],
+["Meghalaya","Nohkalikai Falls","Cherrapunji","Nature","Spectacular waterfall near Sohra.",5500],
+["Mizoram","Reiek Tlang","Aizawl district","Nature","Mountain viewpoint and Mizo cultural experiences.",5000],
+["Mizoram","Vantawng Falls","Serchhip","Nature","Tall waterfall surrounded by forest.",5500],
+["Mizoram","Aizawl","Aizawl","City & Culture","Hilly capital with markets and cultural landmarks.",4500],
+["Nagaland","Kohima War Cemetery","Kohima","Heritage","Memorial commemorating the Battle of Kohima.",4500],
+["Nagaland","Kisama Heritage Village","Kohima","City & Culture","Naga heritage village and Hornbill Festival venue.",5000],
+["Nagaland","Dzukou Valley","Kohima region","Adventure","Scenic valley and trekking destination.",6500],
+["Odisha","Jagannath Temple","Puri","Temple","Major pilgrimage temple; entry rules may apply.",4500],
+["Odisha","Konark Sun Temple","Konark","Heritage","UNESCO-listed stone temple shaped like a chariot.",4500],
+["Odisha","Chilika Lake","Puri & Ganjam region","Nature","Large lagoon known for birds and boat trips.",5500],
+["Odisha","Similipal National Park","Mayurbhanj","Wildlife","Forest reserve, waterfalls and wildlife.",6500],
+["Punjab","Golden Temple","Amritsar","Temple","Sikh holy shrine and community kitchen.",4000],
+["Punjab","Jallianwala Bagh","Amritsar","Heritage","Memorial and museum of a significant historical event.",3500],
+["Punjab","Wagah-Attari Border","Amritsar region","City & Culture","Popular border ceremony; check entry and schedule.",4000],
+["Punjab","Anandpur Sahib","Rupnagar","Heritage","Important Sikh heritage town.",4000],
+["Rajasthan","Hawa Mahal","Jaipur","Heritage","Iconic pink sandstone palace facade.",5000],
+["Rajasthan","Amer Fort","Jaipur","Heritage","Hilltop fort and palace complex.",5500],
+["Rajasthan","Jaisalmer Fort","Jaisalmer","Heritage","Living golden sandstone fort in the Thar Desert.",7500],
+["Rajasthan","Lake Pichola","Udaipur","Nature","Lake views, boat rides and palaces.",6500],
+["Sikkim","Tsomgo Lake","East Sikkim","Nature","High-altitude lake; permits and weather restrictions apply.",7500],
+["Sikkim","Gangtok","Gangtok","Hill Station","Mountain capital with monasteries and viewpoints.",6500],
+["Sikkim","Yumthang Valley","North Sikkim","Nature","Alpine valley with seasonal flowers; permit required.",9500],
+["Sikkim","Pelling & Pemayangtse","West Sikkim","Heritage","Monastery, mountain views and heritage sites.",7000],
+["Tamil Nadu","Meenakshi Amman Temple","Madurai","Temple","Historic temple complex with towering gopurams.",4500],
+["Tamil Nadu","Rameswaram & Pamban Bridge","Ramanathapuram","Temple","Pilgrimage island and famous sea bridge.",5500],
+["Tamil Nadu","Ooty","Nilgiris","Hill Station","Hill station with gardens, lake and scenic railway.",6500],
+["Tamil Nadu","Mahabalipuram","Chengalpattu","Heritage","Shore Temple and ancient rock-cut monuments.",4500],
+["Telangana","Charminar","Hyderabad","Heritage","Historic monument in Hyderabad's old city.",4000],
+["Telangana","Golconda Fort","Hyderabad","Heritage","Historic fort known for architecture and acoustics.",4000],
+["Telangana","Ramappa Temple","Mulugu","Heritage","UNESCO-listed Kakatiya-era temple.",5000],
+["Telangana","Nagarjuna Sagar","Nalgonda region","Nature","Dam, reservoir and nearby heritage attractions.",4500],
+["Tripura","Ujjayanta Palace","Agartala","Heritage","Former royal palace and museum.",3500],
+["Tripura","Neermahal","Rudrasagar Lake","Heritage","Water palace set in a lake.",4000],
+["Tripura","Unakoti","Unakoti district","Heritage","Rock-cut Shaivite carvings in a forested setting.",4500],
+["Uttar Pradesh","Taj Mahal","Agra","Heritage","UNESCO-listed marble mausoleum and world-famous landmark.",5000],
+["Uttar Pradesh","Varanasi Ghats","Varanasi","City & Culture","Historic riverfront, temples and Ganga boat rides.",4500],
+["Uttar Pradesh","Ayodhya Ram Mandir","Ayodhya","Temple","Major pilgrimage destination; check current visitor guidance.",4000],
+["Uttar Pradesh","Fatehpur Sikri","Agra district","Heritage","Historic Mughal city and palace complex.",4500],
+["Uttarakhand","Kedarnath","Rudraprayag","Temple","Himalayan pilgrimage destination; seasonal access and registration apply.",10000],
+["Uttarakhand","Nainital","Nainital","Hill Station","Lake town with viewpoints and boating.",6500],
+["Uttarakhand","Rishikesh","Dehradun region","Adventure","Ganga riverfront, yoga and permitted adventure activities.",5500],
+["Uttarakhand","Valley of Flowers","Chamoli","Nature","Seasonal alpine national park; trek and permits required.",9500],
+["West Bengal","Victoria Memorial","Kolkata","Heritage","Marble museum and gardens in Kolkata.",4000],
+["West Bengal","Darjeeling","Darjeeling","Hill Station","Tea gardens, mountain views and heritage railway.",7500],
+["West Bengal","Sundarbans","South 24 Parganas","Wildlife","Mangrove delta and wildlife boat tours.",7500],
+["West Bengal","Digha Beach","Purba Medinipur","Beach","Popular Bay of Bengal beach destination.",4500],
+["Andaman & Nicobar Islands","Swaraj Dweep (Havelock)","South Andaman Sea","Beach","Island beaches, snorkeling and clear waters.",14000],
+["Andaman & Nicobar Islands","Cellular Jail","Port Blair","Heritage","National memorial and museum.",9000],
+["Andaman & Nicobar Islands","Shaheed Dweep (Neil)","South Andaman Sea","Beach","Quiet island beaches and natural rock formations.",13000],
+["Chandigarh","Rock Garden","Chandigarh","City & Culture","Sculpture garden made with recycled materials.",2500],
+["Chandigarh","Sukhna Lake","Chandigarh","Nature","Urban lake with walking paths and boating.",2500],
+["Chandigarh","Capitol Complex","Chandigarh","Heritage","Le Corbusier-designed architectural complex; access rules apply.",3000],
+["Dadra & Nagar Haveli and Daman & Diu","Diu Fort","Diu","Heritage","Portuguese-era sea fort and coastal views.",5000],
+["Dadra & Nagar Haveli and Daman & Diu","Nagoa Beach","Diu","Beach","Curved beach popular for seaside recreation.",5000],
+["Dadra & Nagar Haveli and Daman & Diu","Dudhni Lake","Dadra & Nagar Haveli","Nature","Lake and forest setting near Silvassa.",4500],
+["Delhi","Red Fort","Old Delhi","Heritage","Historic Mughal fort and national landmark.",3500],
+["Delhi","Qutub Minar","Mehrauli","Heritage","UNESCO-listed medieval minaret complex.",3500],
+["Delhi","Humayun's Tomb","Nizamuddin","Heritage","Garden tomb and important Mughal architecture.",3500],
+["Delhi","India Gate & Kartavya Path","New Delhi","City & Culture","War memorial and central ceremonial boulevard.",3000],
+["Jammu & Kashmir","Dal Lake","Srinagar","Nature","Lake, houseboats and shikara rides.",8500],
+["Jammu & Kashmir","Gulmarg","Baramulla","Hill Station","Mountain resort with seasonal snow and gondola.",10000],
+["Jammu & Kashmir","Pahalgam","Anantnag","Nature","Valley scenery, rivers and outdoor excursions.",9000],
+["Jammu & Kashmir","Vaishno Devi","Katra","Temple","Major pilgrimage shrine; registration and route advisories apply.",6500],
+["Ladakh","Pangong Tso","Leh district","Nature","High-altitude lake with changing blue shades.",13000],
+["Ladakh","Nubra Valley","Leh district","Nature","Sand dunes, monasteries and mountain landscapes.",12000],
+["Ladakh","Thiksey Monastery","Leh","Heritage","Hilltop monastery with views over the Indus Valley.",9000],
+["Ladakh","Magnetic Hill & Gurudwara Pathar Sahib","Leh region","Nature","Popular roadside stops on the Leh route.",8500],
+["Lakshadweep","Agatti Island","Lakshadweep","Beach","Island known for lagoon and water activities; permits required.",18000],
+["Lakshadweep","Bangaram Island","Lakshadweep","Beach","Small island with beaches and clear lagoon waters.",20000],
+["Lakshadweep","Kavaratti","Lakshadweep","Beach","Administrative capital with lagoon and marine life.",17000],
+["Puducherry","Promenade Beach","Puducherry","Beach","Seafront promenade and French Quarter nearby.",4500],
+["Puducherry","Auroville","Villupuram region","City & Culture","International township and visitor centre.",4500],
+["Puducherry","Paradise Beach","Puducherry","Beach","Beach reached by boat from Chunnambar area.",5000]
+];
+const places=raw.map((r,i)=>({id:i,state:r[0],name:r[1],city:r[2],cat:r[3],desc:r[4],cost:r[5],img:''}));
+// Fetch a destination-specific thumbnail from Wikipedia's public API.
+// If no matching image is found, show a neutral placeholder rather than another place's photo.
+async function fetchPlaceImage(p){
+ const query=`${p.name} ${p.city} ${p.state} India`;
+ try{
+  const searchUrl=`https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srnamespace=0&srlimit=5&format=json&origin=*`;
+  const sr=await fetch(searchUrl).then(r=>r.json());
+  const results=sr?.query?.search||[];
+  if(!results.length)return '';
+  const ids=results.map(x=>x.pageid).join('|');
+  const imageUrl=`https://en.wikipedia.org/w/api.php?action=query&pageids=${ids}&prop=pageimages&piprop=thumbnail&pithumbsize=900&format=json&origin=*`;
+  const data=await fetch(imageUrl).then(r=>r.json());
+  const pages=Object.values(data?.query?.pages||{});
+  // Prefer exact-name article title match; otherwise use only a search result with a thumbnail.
+  const norm=x=>String(x||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+  const exact=pages.find(x=>norm(x.title)===norm(p.name));
+  const page=(exact?.thumbnail?.source?exact:pages.find(x=>x.thumbnail?.source));
+  return page?.thumbnail?.source||'';
+ }catch(e){return ''}
+}
+function photoUrl(p){return p.img||''}
+const stateEl=document.getElementById('state'),tripEl=document.getElementById('tripPlace');
+[...new Set(places.map(p=>p.state))].sort().forEach(s=>{stateEl.add(new Option(s,s))});
+places.forEach(p=>tripEl.add(new Option(`${p.name} — ${p.state}`,p.id)));
+document.getElementById('count').textContent=places.length;
+function render(){let q=document.getElementById('search').value.toLowerCase(),s=stateEl.value,c=document.getElementById('category').value;let list=places.filter(p=>(!q||[p.name,p.state,p.city,p.desc].join(' ').toLowerCase().includes(q))&&(!s||p.state===s)&&(!c||p.cat===c));document.getElementById('shown').textContent=`Showing ${list.length} of ${places.length} places`;document.getElementById('empty').hidden=!!list.length;document.getElementById('grid').innerHTML=list.map(p=>`<article class="card"><div class="photo"><div class="image-slot" data-place-id="${p.id}" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#171717;color:#aaa;font-size:13px;text-align:center;padding:12px">Photo loading…</div><span class="tag">${p.cat}</span></div><div class="cardbody"><div class="place">${p.state} • ${p.city}</div><h3>${p.name}</h3><p class="desc">${p.desc}</p><div class="meta"><span>Approx. ₹${p.cost.toLocaleString('en-IN')}/person</span><span>India 🇮🇳</span></div><div class="actions"><button class="btn" onclick="choose(${p.id})">Plan Trip</button><button class="btn secondary" onclick="saveOne(${p.id})">＋ Save</button></div></div></article>`).join('');list.forEach(async p=>{const slot=document.querySelector(`[data-place-id=\"${p.id}\"]`);if(!slot)return;const src=await fetchPlaceImage(p);if(!slot.isConnected)return;if(src){const img=document.createElement('img');img.loading='lazy';img.src=src;img.alt=p.name;img.style='width:100%;height:100%;object-fit:cover';img.onerror=()=>{img.remove();slot.textContent='Is jagah ki verified photo abhi nahi mili';};slot.replaceWith(img)}else{slot.textContent='Is jagah ki verified photo abhi nahi mili';slot.style.fontSize='12px'}})}
+['search','state','category'].forEach(id=>document.getElementById(id).addEventListener(id==='search'?'input':'change',render));
+const travelModeEl=document.getElementById('travelMode');
+const travelDefaults={car:3000,bike:1200,train:1500,airplane:7000,bus:1000,cycle:200,other:0};
+travelModeEl.addEventListener('change',()=>{const mode=travelModeEl.value;document.getElementById('travelCost').value=travelDefaults[mode];document.getElementById('travelCost').placeholder=travelModeEl.selectedOptions[0].text+' round trip/person (₹)';calculate();});
+function choose(id){tripEl.value=id;document.getElementById('budget').scrollIntoView({behavior:'smooth',block:'center'});calculate()}
+function calculate(){let p=places[+tripEl.value];if(!p){document.getElementById('budget').textContent='Pehle destination choose karein.';return}let d=Math.max(1,Math.min(60,+document.getElementById('days').value||1)),n=Math.max(1,Math.min(100,+document.getElementById('people').value||1)),mult={budget:.7,standard:1,comfort:1.65}[document.getElementById('style').value],travel=Math.max(0,+document.getElementById('travelCost').value||0),hotel=Math.max(0,+document.getElementById('hotelCost').value||0),food=Math.max(0,+document.getElementById('foodCost').value||0),tickets=Math.max(0,+document.getElementById('ticketCost').value||0),local=Math.max(0,+document.getElementById('localCost').value||0),rooms=Math.ceil(n/2),hotelTotal=rooms*hotel*d,foodTotal=food*d*n,localTotal=local*d*n,travelTotal=travel*n,ticketTotal=tickets*n,base=Math.round(p.cost*d/3*mult),groupTotal=travelTotal+hotelTotal+foodTotal+localTotal+ticketTotal+base,perPerson=Math.ceil(groupTotal/n);document.getElementById('budget').innerHTML=`<b>${p.name}, ${p.state}</b><br>${d} days • ${n} people • ${travelModeEl.selectedOptions[0].text} • ${document.getElementById('style').selectedOptions[0].text}<div style="margin-top:12px;overflow-x:auto"><table style="width:100%;border-collapse:collapse;text-align:left;line-height:1.6"><thead><tr><th style="padding:7px;border-bottom:1px solid #555">Expense</th><th style="padding:7px;border-bottom:1px solid #555">Per person</th><th style="padding:7px;border-bottom:1px solid #555">Group total</th></tr></thead><tbody><tr><td style="padding:7px">Travel (round trip)</td><td>₹${Math.ceil(travelTotal/n).toLocaleString('en-IN')}</td><td>₹${travelTotal.toLocaleString('en-IN')}</td></tr><tr><td style="padding:7px">Hotel (${rooms} rooms × ${d} nights)</td><td>₹${Math.ceil(hotelTotal/n).toLocaleString('en-IN')}</td><td>₹${hotelTotal.toLocaleString('en-IN')}</td></tr><tr><td style="padding:7px">Food</td><td>₹${Math.ceil(foodTotal/n).toLocaleString('en-IN')}</td><td>₹${foodTotal.toLocaleString('en-IN')}</td></tr><tr><td style="padding:7px">Entry tickets</td><td>₹${Math.ceil(ticketTotal/n).toLocaleString('en-IN')}</td><td>₹${ticketTotal.toLocaleString('en-IN')}</td></tr><tr><td style="padding:7px">Local transport</td><td>₹${Math.ceil(localTotal/n).toLocaleString('en-IN')}</td><td>₹${localTotal.toLocaleString('en-IN')}</td></tr><tr><td style="padding:7px">Activities / destination estimate</td><td>₹${Math.ceil(base/n).toLocaleString('en-IN')}</td><td>₹${base.toLocaleString('en-IN')}</td></tr></tbody></table></div><div style="margin-top:12px">Per person total: <strong style="color:#ffc857;font-size:24px">₹${perPerson.toLocaleString('en-IN')}</strong></div><div>Group total (${n} people): <strong style="color:#ffc857;font-size:24px">₹${groupTotal.toLocaleString('en-IN')}</strong></div><br><span class="note">Rates editable estimates hain, live hotel/transport fares nahi. Hotel 2 people per room aur selected style multiplier activity estimate par apply hota hai. Booking se pehle actual prices check karein.</span>`}
+// Auto-recalculate as soon as people, days, travel mode, rates, or trip style change.
+['tripPlace','days','people','travelCost','hotelCost','foodCost','ticketCost','localCost','style'].forEach(id=>document.getElementById(id).addEventListener('input',calculate));
+['tripPlace','style'].forEach(id=>document.getElementById(id).addEventListener('change',calculate));
+function getSaved(){try{return JSON.parse(localStorage.getItem('indiaX92Saved')||'[]')}catch(e){return []}}
+function saveOne(id){let a=getSaved();if(!a.includes(id))a.push(id);localStorage.setItem('indiaX92Saved',JSON.stringify(a));showSaved()}
+function saveTrip(){if(tripEl.value===''){alert('Destination choose karein');return}saveOne(+tripEl.value)}
+function saveBudgetSettings(){const ids=['tripPlace','days','people','travelMode','travelCost','hotelCost','foodCost','ticketCost','localCost','style'];const data={};ids.forEach(id=>data[id]=document.getElementById(id).value);localStorage.setItem('indiaX92BudgetSettings',JSON.stringify(data));alert('Budget settings is device/browser mein save ho gayi!');}
+function loadBudgetSettings(){try{const data=JSON.parse(localStorage.getItem('indiaX92BudgetSettings')||'null');if(!data){alert('Abhi koi saved budget setting nahi hai.');return;}Object.entries(data).forEach(([id,value])=>{const el=document.getElementById(id);if(el)el.value=value;});calculate();alert('Saved budget settings load ho gayi!');}catch(e){alert('Saved settings load nahi ho paayi.');}}
+function clearSaved(){localStorage.removeItem('indiaX92Saved');showSaved()}
+function showSaved(){let a=getSaved();document.getElementById('saved').innerHTML=a.length?a.map(id=>`<span>${places[id]?.name||'Place'}</span>`).join(''):'<span>No saved destinations yet.</span>'}
+render();showSaved();
+</script></body></html>
